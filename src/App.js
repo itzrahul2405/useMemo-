@@ -26,7 +26,7 @@ function App() {
     <div className="app">
       <DemoList title={listTitle} items={listItems} decend={shouldDecend} />
       <Button onClick={changeTitleHandler}>Change List Title</Button>
-      <Button onClick={decendingOrderHandler}>Change to Decending Order</Button>
+      <Button onClick={decendingOrderHandler}>{!shouldDecend ? "Change to Decending Order" : "Change to Assending Order"}</Button>
     </div>
   );
 }
